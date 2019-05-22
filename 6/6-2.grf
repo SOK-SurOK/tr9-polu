@@ -1,0 +1,122 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.2 
+
+[Axes]
+xMin = -28.3792615559523
+xMax = 170.659885834673
+xTickUnit = 10
+xGridUnit = 10
+xLabel = U, B
+yMin = -0.771135151811945
+yMax = 6.07581151842554
+yTickUnit = 1
+yGridUnit = 1
+yLabel = I, A
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+Title = Ia =  f(Ua)
+
+[PointSeries1]
+FillColor = clRed
+LineColor = clBlue
+Size = 5
+Style = 0
+LabelPosition = 1
+PointCount = 16
+Points = 86,0.03;124,0.4;124,0.5;125,0.6;125,0.64;124.7,0.7;97.0,0.8;95.0,0.9;93.0,1.0;80.0,1.9;70.0,2.4;60.0,2.8;50.0,3.2;40.0,3.4;10.0,3.8;1.0,4.3;
+LegendText = Iy = 0.00 mA
+
+[PointSeries2]
+FillColor = clLime
+LineColor = clBlue
+Size = 5
+Style = 0
+LabelPosition = 1
+PointCount = 14
+Points = 56.0,0.26;78.0,0.3;110.0,0.5;113.0,0.6;111.0,0.68;111.0,0.8;110.0,0.9;109.5,1.0;75.0,1.5;52.2,3.0;14.2,3.5;3.1,4.0;0.95,4.5;0.9,4.75;
+LegendText = Iy = 0.04 mA
+
+[PointSeries3]
+FillColor = clFuchsia
+LineColor = clBlue
+Size = 5
+Style = 3
+LabelPosition = 1
+PointCount = 12
+Points = 39.9,0.5;50.0,0.54;90.7,0.7;100.5,0.95;96.7,1.25;85.0,2;71.0,2.5;29.2,3.0;5.0,3.5;1.2,4.0;0.87,4.5;0.87,4.75;
+LegendText = Iy = 0.08 mA
+
+[PointSeries4]
+FillColor = clSkyBlue
+LineColor = clBlue
+Size = 5
+Style = 2
+LabelPosition = 1
+PointCount = 13
+Points = 13.0,0.7;53.0,1.0;76.3,1.25;85.2,1.5;75.0,1.56;60,2.0;32.2,2.5;11.7,3.0;2.35,3.5;1.0,4.0;0.86,4.5;0.88,4.75;0.89,4.85;
+LegendText = Iy = 0.12 mA
+
+[PointSeries5]
+FillColor = clYellow
+LineColor = clBlue
+Size = 5
+Style = 5
+LabelPosition = 1
+PointCount = 13
+Points = 0.8,0.5;7.5,1.0;36.0,1.5;42.0,1.8;37.0,2.0;22.4,2.5;6.7,3.0;2.23,3.5;0.99,4.0;0.88,4.25;0.86,4.5;0.89,4.75;0.90,4.85;
+LegendText = Iy = 0.16 mA
+
+[Func1]
+FuncType = 1
+x = if(t<1,78+32*t,t<2,107+3*t,t<3,117-2*t,t<4,111+0*t,t<5,115-1*t,t<6,112.5-0.5*t,t<7,316.5-34.5*t,t<8,234.6-22.8*t,t<9,356.2-38*t,t<10,114.1-11.1*t,t<11,24.6-2.15*t,t<12,1.5-0.05*t)
+y = if(t<1,0.28+0.12*t,t<2,0.25+0.15*t,t<3,0.37+0.09*t,t<4,0.34+0.1*t,t<5,0.3+0.11*t,t<6,0.35+0.1*t,t<7,-0.85+0.3*t,t<8,-5.75+1*t,t<9,-5.75+1*t,t<10,-1.25+0.5*t,t<11,-1.25+0.5*t,t<12,0.125+0.375*t)
+LegendText = Скользящее среднее
+From = 0
+To = 12
+Steps = 1000
+Color = clLime
+
+[Func2]
+FuncType = 1
+x = if(t<1,86+38*t,t<2,124+0*t,t<3,122+1*t,t<4,125+0*t,t<5,126.2-0.3*t,t<6,263.2-27.7*t,t<7,109-2*t,t<8,109-2*t,t<9,197-13*t,t<10,170-10*t,t<11,170-10*t,t<12,170-10*t,t<13,170-10*t,t<14,430-30*t,t<15,136-9*t)
+y = if(t<1,0.03+0.37*t,t<2,0.3+0.1*t,t<3,0.3+0.1*t,t<4,0.48+0.04*t,t<5,0.4+0.06*t,t<6,0.2+0.1*t,t<7,0.2+0.1*t,t<8,0.2+0.1*t,t<9,-6.2+0.9*t,t<10,-2.6+0.5*t,t<11,-1.6+0.4*t,t<12,-1.6+0.4*t,t<13,0.8+0.2*t,t<14,-1.8+0.4*t,t<15,-3.2+0.5*t)
+LegendText = Скользящее среднее
+From = 0
+To = 15
+Steps = 1000
+Color = clRed
+
+[Func3]
+FuncType = 1
+x = if(t<1,50+40.7*t,t<2,80.9+9.8*t,t<3,108.1-3.8*t,t<4,131.8-11.7*t,t<5,141-14*t,t<6,280-41.8*t,t<7,174.4-24.2*t,t<8,31.6-3.8*t,t<9,3.84-0.33*t,t<10,0.87+0*t)
+y = if(t<1,0.52+0.1*t,t<2,0.415+0.205*t,t<3,0.275+0.275*t,t<4,-0.475+0.525*t,t<5,-0.875+0.625*t,t<6,-0.25+0.5*t,t<7,-0.25+0.5*t,t<8,-0.25+0.5*t,t<9,-0.25+0.5*t,t<10,0.875+0.375*t)
+LegendText = Скользящее среднее
+From = 0
+To = 10
+Steps = 1000
+Color = clFuchsia
+
+[PointSeries6]
+FillColor = clBlue
+LineColor = clBlue
+Size = 5
+Style = 5
+LabelPosition = 1
+PointCount = 12
+Points = 0.5,0.5;1.7,1.0;10.3,1.5;14.8,1.75;15.3,2.0;14.6,2.25;9.6,2.5;2.8,3.0;1.5,3.5;0.9,4.0;0.86,4.5;0.88,4.75;
+LegendText = Iy = 0.19 mA
+
+[Data]
+TextLabelCount = 0
+FuncCount = 3
+PointSeriesCount = 6
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+
